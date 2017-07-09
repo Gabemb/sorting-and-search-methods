@@ -1,17 +1,17 @@
 const quickSort = (arr) => {
-  if (arr.length === 0) {return arr;}
+  if (arr.length === 0) {return arr};
 
-  let pivot = arr[Math.floor(arr.length / 2)]
+  let pivot = arr[Math.floor(arr.length / 2)];
 
   let left = [];
   let right = [];
 
   arr.forEach((num) => {
     if (num !== pivot) {
-      num > pivot 
+      num > pivot
       ? right.push(num) 
-      : left.push(num)      
-    }
+      : left.push(num);
+    };
   });
 
   return quickSort(left).concat(pivot).concat(quickSort(right));

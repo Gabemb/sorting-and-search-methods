@@ -1,9 +1,9 @@
 const createBuckets = () => {
-  let arr = []
+  let arr = [];
   for (let i = 0; i < 10; i++) {
-    arr.push([])
+    arr.push([]);
   }
-  return arr
+  return arr;
 }
 
 const findBiggestNum = (arr) => {
@@ -26,8 +26,9 @@ const radixSort = (arr) => {
   for (let i = 0; i < loops; i++) {
     for (let x = 0; x < arr.length; x++) {
       let num = arr[x].toString();
-      let digit = parseInt(num[num.length - 1 - i])
-      console.log(typeof digit)
+      let digit = parseInt(num[num.length - 1 - i]);
+      
+      buckets[digit].push(arr[x]);
     }
   }
 };
