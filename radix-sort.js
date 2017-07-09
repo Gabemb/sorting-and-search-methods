@@ -9,7 +9,7 @@ const createBuckets = () => {
 const findBiggestNum = (arr) => {
   let biggest = -Infinity;
   for (let i = 0; i < arr.length; i++) {
-    currentNum = arr[i];
+    let currentNum = arr[i];
     if(currentNum > biggest) {
       biggest = currentNum;
     };
