@@ -2,7 +2,6 @@
 // once one array is empty, add the rest into output
 
 
-// reminder for gabe: check out git book
 // 'merge' helper function always recieves two sorted arrays
 // compares the values of the 1st indices of each array
 // 
